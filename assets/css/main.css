@@ -1,0 +1,207 @@
+*{
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+  }
+
+.logo img{
+    width: 120px;
+}
+
+.navbar{
+    background-color: transparent;
+}
+
+.swiper-slide {
+    position: relative;
+    display: flex;          /* center items if needed */
+    align-items: center;
+    justify-content: center;
+    background: #000;       /* fallback background */
+  }
+
+  .mySwiper {
+    width: 100%;
+    height: 500px; /* Increase to 600px (or 70vh, etc.) */
+    border-radius: 10px;
+  }
+  /* Make images scale nicely */
+  .slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* Crop edges to fill */
+    display: block;
+  }
+  /* Semi-transparent overlay for text */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+  }
+  .swiper-button-next, 
+    .swiper-button-prev {
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .swiper-button-next {
+      right: 5%;
+    }
+    .swiper-button-prev {
+      left: 5%;
+    }
+
+    .features {
+        position: relative;
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+        color: #fff;
+        overflow: hidden;
+        padding: 80px 0;
+      }
+    
+      /* A blurred duplicate background for a dreamy effect */
+      .features::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%;
+        background: inherit;
+        filter: blur(30px);
+        opacity: 0.5;
+        z-index: 1;
+      }
+    
+      .features .container {
+        position: relative;
+        z-index: 2;
+      }
+    
+      .features h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      
+      .story .side {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    
+      .story .text-content,
+      .story .image-content {
+        flex: 1 1 45%;
+      }
+    
+      .story .image-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    
+      .story .text-content p:first-of-type {
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+      }
+      
+      .story .text-content h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+      
+      .story .text-content p:last-of-type {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    
+      /* Mobile view: stack items vertically with text on top */
+      @media (max-width: 768px) {
+        .story .side {
+          flex-direction: column;
+        }
+        /* Optionally adjust spacing on mobile */
+        .story .text-content,
+        .story .image-content {
+          flex: 1 1 100%;
+        }
+      }
+
+
+      span, h5{
+        color: #e25252;
+      }
+
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid rgb(226, 82, 82);
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.5s;
+      }
+      
+      .button:hover {
+        background-color: rgb(226, 82, 82);
+      }
+      
+      
+      .modal-body p{
+        color: #000;
+      }
+
+       /* Darken the carousel images */
+    .hero .carousel-item {
+      filter: brightness(0.4);
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    }
+    .hero .carousel-item.active {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 991.98px) {
+      /* When the navbar is collapsed in mobile view */
+      .navbar-collapse {
+        background: rgba(0, 0, 0, 0.8); /* Dark, semi-transparent background */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 0 0 10px 10px;
+        padding: 1rem;
+      }
+      
+      /* Optional: Style nav links for better contrast */
+      .navbar-collapse .nav-link {
+        color: #fff;
+        font-weight: 500;
+      }
+      
+      .navbar-collapse .nav-link:hover {
+        color: rgb(226, 82, 82);
+      }
+    }
+    
+    
+
+
+    
