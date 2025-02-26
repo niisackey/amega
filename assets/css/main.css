@@ -6,6 +6,7 @@
 body {
     background-color: #000;
     color: #fff;
+    font-family: "Poppins", serif;
   }
 
 .logo img{
@@ -140,10 +141,19 @@ body {
           flex: 1 1 100%;
         }
       }
-
+      
+      .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+  }
 
       span, h5{
         color: #e25252;
+      }
+      
+      h1 span{
+        font-weight: bold;
       }
 
 
